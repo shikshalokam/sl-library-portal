@@ -1,0 +1,356 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
+@import "./assets/scss/variables.scss";
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+}
+button {
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+}
+
+
+.dashboard-wrapper {
+  // background: white;
+  min-height: calc(85vh);
+  width: 100%;
+  box-shadow: 0 0 35px rgba(101, 113, 164, 0.1);
+  /* border-radius: 20px; */
+  position: relative;
+  border-radius: 0;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  height: 100%;
+  width: 240px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.main-panel {
+  float: right;
+  /* width: calc(100% - 240px); */
+}
+.logo {
+  text-align: center;
+  padding: 28px 15px;
+}
+.sidebar-menu {
+  padding: 50px 30px 20px 50px;
+}
+.menu-title {
+  font-size: 11px;
+  font-weight: 500;
+  color: #cdcfd8;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+.sidebar-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sidebar-menu ul li {
+  display: block;
+  margin-bottom: 15px;
+}
+.sidebar-menu ul li a {
+  display: block;
+  padding: 8px 0px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #cfcfcf;
+  display: flex;
+  align-items: center;
+}
+.sidebar-menu ul li a:hover,
+.sidebar-menu ul li a:focus,
+.sidebar-menu ul li a.active {
+  color: #000005;
+  text-decoration: none;
+}
+.sidebar-menu ul li a span.dashboard-icon {
+  max-width: 20px;
+  margin-right: 15px;
+  min-width: 20px;
+}
+.sidebar-menu ul li a span img {
+  max-width: 20px;
+}
+.dashboard-header {
+  padding: 30px 20px 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 0 0;
+}
+
+.notification-box,
+.message-box {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.notification-box svg,
+.message-box svg {
+  width: 20px;
+  fill: #000000;
+}
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+img {
+  max-width: 100%;
+}
+
+.username-dropdown .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 0 35px rgba(101, 113, 164, 0.1);
+}
+
+.dashboard-content {
+  padding: 30px 40px 15px 50px;
+}
+.box {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 35px rgba(101, 113, 164, 0.1);
+}
+
+
+@media (max-width: 767px) {
+  .count-circle-row {
+    display: flex;
+    margin: 0 -15px;
+    padding-top: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .employee-count {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .count-circle {
+    padding: 20px 15px;
+  }
+}
+/*hour worked input css for runpayroll page*/
+.work-hours input {
+  width: 100px;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  background: transparent;
+  height: 24px;
+}
+.work-hours input:focus {
+  outline: none;
+}
+.work-hours {
+  min-width: 123px;
+  width: 123px;
+  max-width: 123px;
+}
+.required:after {
+  content: " *";
+}
+.mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination {
+  display: none !important;
+}
+.mat-icon {
+  background-repeat: no-repeat;
+  display: inline-block;
+  color: $primary-color;
+  height: 20px;
+  width: 24px;
+  font-size: 30px;
+}
+
+.btn-primary:disabled {
+  color: #fff;
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+}
+.form-full-width {
+  width: 48%;
+  padding-left: 50px;
+}
+.margin-top {
+  margin-top: 15px;
+}
+.margin-left {
+  margin-left: 10px;
+}
+.radio-label-padding {
+  padding-right: 10px;
+  color: grey;
+}
+
+.pageName {
+  background-color: $white-color;
+  padding: 1px 3px 3px 10px;
+  color: $primary-color;
+}
+
+*:focus {
+  outline: none !important;
+  border: 0 !important;
+}
+.text-capital {
+  text-transform: capitalize;
+}
+.mat-simple-snackbar-action button {
+  color: rgb(233, 228, 221);
+}
+
+.postive {
+  color: $green-color;
+}
+.negative {
+  color: $primary-color;
+}
+
+.mat-dialog-container {
+  padding: 0px !important;
+  overflow: hidden !important;
+}
+
+.mat-dialog-content {
+  margin: 0px !important;
+}
+
+.mat-header-cell {
+  color: $black-color;
+  font-weight: 600;
+}
+
+th.mat-header-cell {
+  border-bottom-style: none !important;
+}
+td.mat-cell {
+  border-bottom-style: none !important;
+}
+th.mat-sort-header-sorted {
+  color: black !important;
+}
+
+.mat-button {
+  font-weight: 600;
+  color: $primary-color;
+}
+
+.mat-table {
+  overflow: auto;
+  // height: 550px;
+  height: 63vh;
+}
+
+.table-container {
+  position: relative;
+}
+
+.message {
+  text-align: center;
+  background-color: $white-color;
+  color: $text-color;
+  position: absolute;
+  top: 10%;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-cell {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  padding: 12px 0px 10px 0px;
+}
+.mat-row {
+  height: 48px;
+}
+.mat-spinner {
+  ::ng-deep circle {
+    stroke: $white-color !important;
+  }
+}
+
+html {
+  position: initial !important;
+  overflow-y: initial !important;
+}
+
+html.cdk-global-scrollblock body {
+  overflow: hidden;
+}
+.cdk-overlay-container {
+  overflow: auto;
+}
+
+.p-button{
+  background: #f5f5f5;
+}
+
+.title {
+  font-weight: 600;
+  color: $white-color;
+  text-align: center;
+  margin-right: 12%;
+  padding: 5px 0px 0px 12px;
+}
+

@@ -48,3 +48,22 @@ a:hover {
 .negative {
   color: $primary-color;
 }
+
+.example-card {
+  width: 260px;
+  height: 160px;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+.filters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding-left: 20%; */
+  margin-left: 20%;
+  width: 100%;
+  font-weight: 100;
+}

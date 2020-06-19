@@ -3,14 +3,15 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Interceptor } from './services/interceptor/interceptor';
 import { PortalSharedModule } from '../portal-shared';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
-  declarations: [],
   imports: [
     CommonModule,
     HttpClientModule,
-    PortalSharedModule
+    PortalSharedModule,
+    MatSidenavModule
   ],
   providers:[
     { provide: HTTP_INTERCEPTORS, useClass: Interceptor, multi: true }

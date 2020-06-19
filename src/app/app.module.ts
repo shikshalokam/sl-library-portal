@@ -19,6 +19,9 @@ import { CommonModule } from '@angular/common';
 import { PortalSharedModule } from './modules/portal-shared/portal-shared.module';
 import { HomeComponent } from './modules/portal-core/components/home/home.component';
 import { PortalFooterComponent } from './modules/portal-core/components/portal-footer/portal-footer.component';
+import { SideMenuComponent } from './modules/portal-core/components/side-menu/side-menu.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 
 
 export function tokenGetter() {
@@ -29,6 +32,7 @@ export function tokenGetter() {
     AppComponent,
     HeaderComponent,
     HomeComponent,
+    SideMenuComponent,
     // BreadCrumComponent,
     PortalFooterComponent
   ],
@@ -40,6 +44,7 @@ export function tokenGetter() {
     BrowserAnimationsModule,
     KeycloakAngularModule,
     CommonModule,
+    MatSidenavModule,
     // CoreModule.forRoot(),
     PortalCoreModule,
     // JwtModule.forRoot({

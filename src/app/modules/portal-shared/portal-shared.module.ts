@@ -1,11 +1,7 @@
 import { NgModule, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-// import { CommonModule } from '@angular/common';
-
-
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputComponent } from './components/input/input.component';
-// import { ButtonComponent } from './components/button/button.component';
 import { SelectComponent } from './components/select/select.component';
 import { DateComponent } from './components/date/date.component';
 import { RadiobuttonComponent } from './components/radiobutton/radiobutton.component';
@@ -13,7 +9,6 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { DynamicFieldDirective } from './components/dynamic-field/dynamic-field.directive';
 import { MultiSelectComponent } from './components/multi-select/multi-select.component';
 import { PasswordComponent } from './components/password/password.component';
-// import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 import { TextAreaComponent } from './components/text-area/text-area.component';
 import { AutoCompleteComponent } from './components/auto-complete/auto-complete.component';
@@ -42,17 +37,33 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import {ClipboardModule} from '@angular/cdk/clipboard';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {PortalModule} from '@angular/cdk/portal';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import {CdkStepperModule} from '@angular/cdk/stepper';
+import {CdkTableModule} from '@angular/cdk/table';
+import {CdkTreeModule} from '@angular/cdk/tree';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatNativeDateModule, MatRippleModule} from '@angular/material/core';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatTreeModule} from '@angular/material/tree';
 
 
 @NgModule({
-  // ButtonComponent
   declarations: [DebounceDirective, DynamicFieldDirective,
     InputComponent, SelectComponent, RadiobuttonComponent, DynamicFormComponent,
     CheckboxComponent, MultiSelectComponent, DateComponent, PasswordComponent,
     TextAreaComponent, AutoCompleteComponent,
   ],
   imports: [
-    // CommonModule,
     FormsModule, ReactiveFormsModule,
     MatIconModule,
     MatDialogModule,
@@ -66,9 +77,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatListModule,
     MatDatepickerModule,
     BrowserModule,
-    // MatNativeDateModule,
     MatSelectModule,
-    // MatOptionModule,
     MatCheckboxModule,
     MatRadioModule,
     MatFormFieldModule,
@@ -79,13 +88,11 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatAutocompleteModule,
     MatProgressSpinnerModule,
     MatChipsModule,
-    // // NgxMatSelectSearchModule,
     MatExpansionModule,
     MatButtonToggleModule
   ],
   exports: [
     FormsModule, ReactiveFormsModule,
-    // CommonModule,
     MatIconModule,
     MatDialogModule,
     MatMenuModule,
@@ -98,9 +105,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatListModule,
     MatDatepickerModule,
     BrowserModule,
-    // MatNativeDateModule,
     MatSelectModule,
-    // MatOptionModule,
     MatCheckboxModule,
     MatRadioModule,
     MatFormFieldModule,
@@ -111,17 +116,14 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatAutocompleteModule,
     MatProgressSpinnerModule,
     MatChipsModule,
-    // // NgxMatSelectSearchModule,
     MatExpansionModule,
     MatButtonToggleModule,
     DynamicFormComponent,
     DebounceDirective,
-    // NgxMatSelectSearchModule
   ],
   schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],
   entryComponents: [
     InputComponent,
-    // ButtonComponent,
     AutoCompleteComponent,
     SelectComponent,
     DateComponent,

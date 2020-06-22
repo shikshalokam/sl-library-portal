@@ -1,8 +1,4 @@
-
-
-
-
-<div class="dashaboard-outer">
+<!-- <div class="dashaboard-outer">
   <div style="min-height: 80%;">
     <app-side-menu></app-side-menu>
     <div class="main-panel">
@@ -11,5 +7,105 @@
     </div>
     <app-portal-footer></app-portal-footer>
   </div>
-  
-</div>
+</div> -->
+
+
+
+<!-- <div class="dashaboard-outer">
+  <app-header></app-header>
+  <app-side-menu></app-side-menu>
+  <div class="dashboard-wrapper">
+    <div style="padding: 50px 40px 15px 50px;">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <app-footer></app-footer>
+  <app-portal-footer></app-portal-footer>
+</div> -->
+
+
+<mat-sidenav-container fullscreen>
+  <mat-sidenav mode="side" #sidenav opened position="start">
+    <div class="sidebar-menu">
+      <ul>
+        <li><a [routerLink]="[]" class="active">
+            <span class="dashboard-icon">
+              <mat-icon>local_library </mat-icon>
+            </span>
+            Library</a>
+        </li>
+
+        <li><a [routerLink]="[]" class="active">
+            <span class="dashboard-icon">
+              <mat-icon>folder </mat-icon>
+            </span>
+            My Folder</a>
+        </li>
+
+        <li><a [routerLink]="[]" class="active">
+            <span class="dashboard-icon">
+              <mat-icon>dashboard </mat-icon>
+            </span>
+            Portals</a>
+        </li>
+
+
+        <li><a [routerLink]="[]" class="active">
+            <span class="dashboard-icon">
+              <mat-icon>edit </mat-icon>
+            </span>
+            Workspace</a>
+        </li>
+
+        <li><a [routerLink]="[]" class="active">
+            <span class="dashboard-icon">
+              <mat-icon>rate_review </mat-icon>
+            </span>
+            Review</a>
+        </li>
+
+        <li><a [routerLink]="[]" class="active">
+            <span class="dashboard-icon">
+              <mat-icon>assignment_late </mat-icon>
+            </span>
+            Support</a>
+        </li>
+
+        <li><a [routerLink]="['/user/multi']" class="active">
+            <span class="dashboard-icon">
+              <mat-icon>help </mat-icon>
+            </span>
+            Help</a>
+        </li>
+
+      </ul>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <div>
+        <img class="b-color" style="width: 15%;height: 10%;" (click)="sidemenu()" alt="Angular Logo"
+          src="assets/images/shikshalokam.png" />
+      </div>
+
+      <span class="toolbar-spacer"></span>
+
+      <button class="b-color" matTooltip="Other Portals" mat-icon-button aria-label="Notifications">
+        <mat-icon (click)="notifications()">dashboard</mat-icon>
+      </button>
+
+      <button class="b-color" matTooltip="Profile" mat-icon-button aria-label="user">
+        <mat-icon (click)="notifications()">person</mat-icon>
+      </button>
+      <!-- My Account -->
+    </mat-toolbar>
+    <div class="main-content">
+      <router-outlet></router-outlet>
+    </div>
+    <app-portal-footer></app-portal-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

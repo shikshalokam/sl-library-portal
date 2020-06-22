@@ -32,7 +32,6 @@ button {
   transition: ease all 0.3s;
 }
 
-
 .dashboard-wrapper {
   // background: white;
   min-height: calc(85vh);
@@ -43,23 +42,22 @@ button {
   border-radius: 0;
 }
 .dashboard-outer {
-  width: 100%
+  width: 100%;
 }
 
 .sidebar {
   position: fixed;
-  top: 0;
+  top: 88px;
   left: 0;
   background: $body-background;
-  height: 100%;
+  // height: 100%;
   width: 240px;
   z-index: 22;
-  margin-top: 90px;
-  overflow-x: auto;
+  // overflow-x: auto;
 }
 .main-panel {
   // float: right;
-  //  width: calc(100% - 240px); 
+  //  width: calc(100% - 240px);
 }
 .logo {
   text-align: center;
@@ -139,8 +137,6 @@ button {
   justify-content: flex-end;
 }
 
-
-
 img {
   max-width: 100%;
 }
@@ -163,14 +159,13 @@ img {
   box-shadow: 0 0 35px rgba(101, 113, 164, 0.1);
 }
 
-
-@media (max-width: 991px) { 
-  .sidebar{
-  //  transform: translateX(-240px);
-   transition: ease all 0.3s;
-   position: fixed;
-   z-index: 3;
-   box-shadow: 0 0 10px rgba(229, 234, 250, 0.65); 
+@media (max-width: 991px) {
+  .sidebar {
+    //  transform: translateX(-240px);
+    transition: ease all 0.3s;
+    position: fixed;
+    z-index: 3;
+    box-shadow: 0 0 10px rgba(229, 234, 250, 0.65);
   }
 
   .sidebar.sidebar-exp {
@@ -181,7 +176,6 @@ img {
     padding: 90px 30px 20px 20px;
   }
 }
-
 
 @media (max-width: 767px) {
   .count-circle-row {
@@ -365,7 +359,7 @@ html.cdk-global-scrollblock body {
   overflow: auto;
 }
 
-.p-button{
+.p-button {
   background: #f5f5f5;
 }
 
@@ -377,3 +371,19 @@ html.cdk-global-scrollblock body {
   padding: 5px 0px 0px 12px;
 }
 
+// My own csss
+
+mat-sidenav {
+  width: 280px;
+  padding: 15px;
+}
+.mat-drawer {
+  background-color: $white-color;
+  color: $primary-color;
+}
+.main-content {
+  padding: 20px;
+}
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
